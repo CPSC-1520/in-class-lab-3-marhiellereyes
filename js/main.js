@@ -10,10 +10,11 @@ showResourcesButton.addEventListener('click',() => {
 
 resourcesDiv.addEventListener('mouseover', (event) => {
     if (event.target.classList.contains('list-group-item')) {
-        event.target.classList.remove('fw-bold');
+        console.log('Mouseover on:', event.target )
+        event.target.classList.add('fw-bold');
 
     }
-    event.target.classList.add('fw-bold');
+    
 });
 
 resourcesDiv.addEventListener('mouseout', (event) => {
@@ -25,8 +26,9 @@ resourcesDiv.addEventListener('mouseout', (event) => {
 resourcesDiv.addEventListener('click', (event) => {
     if (event.target.classList.contains('list-group-item')) {
         event.target.classList.remove('fw-bold');
+        event.target.classList.add('fst-italic');
 
     }
-    event.target.classList.add('fst-italic');
+    
 
 });
